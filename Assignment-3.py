@@ -126,7 +126,8 @@ print(gdp_per_capita_india)
 # The extracted columns are merged into a dataframe
 df_india = pd.merge(co2_india, gdp_per_capita_india, on=co2_india.index,
                     how="outer")
-df_india = df_india.rename(columns={'key_0': "Year", 'India_x': "co2_emissions",
+df_india = df_india.rename(columns={'key_0': "Year",
+                                    'India_x': "co2_emissions",
                                     'India_y': "gdp_per_capita"})
 df_india = df_india.set_index("Year")
 print(df_india)
