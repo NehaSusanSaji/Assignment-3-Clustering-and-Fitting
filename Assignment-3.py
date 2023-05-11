@@ -161,7 +161,6 @@ plt.scatter(xcen, ycen, s=20, c="k", marker="d")
 plt.title("CO2 emission vs GDP per capita of India")
 plt.xlabel("GDP per capita")
 plt.ylabel("CO2 emissions")
-plt.legend()
 plt.show()
 
 # The cluster centres are rescaled to original scale
